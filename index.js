@@ -1,6 +1,7 @@
 function dwarfRollCall(dwarves) {
   var nameOfDwarves = [];
 // create an array to include the dwarves
+  
   for (var i = 0; i < dwarves.length; i++) {
     nameOfDwarves.push(`${i+1}. ${dwarves[i]} `);
   }
@@ -24,7 +25,8 @@ function summonCaptainPlanet(planeteerCalls){
 
 function longPlaneteerCalls(words) {
 // create a test to tell if the word length is over 4 letters. 
-  for (let i = 0; i < words.length; i++) {
+  
+  for (let i=0; i < words.length; i++) {
     if (words[i].length > 4) {
       // If the word length is more than 4, return true.
       return true;
@@ -39,11 +41,33 @@ function findTheCheese (foods) {
 // Find out of there is cheese in the string or not.
  
   for (let i = 0; i < foods.length; i++) {
-    if (foods[i] === 'cheddar' || // <--- || returns true if either element is true.
+    if (foods[i] === 'cheddar' || 
+    foods[i] === 'feta' ||
+    
+    // <--- || returns true if either element is true.
         foods[i] === 'gouda') {
           return foods[i];
         }
   }
   return 'no cheese!';
 // If the chesse listed above is not present, "no cheese" will be returned
+
+
 }
+
+
+function hello () {
+  return "hello"
+  return "goodbye"
+}
+
+function wordsWithB (words) {
+  var names = []
+  for (let i = 0; i < words.length; i++) {
+    if (words[i][0] === 'B') {
+    names.push(words[i])
+    }
+  }
+return names
+}
+
